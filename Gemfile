@@ -1,6 +1,7 @@
-source 'https://rubygems.org'
+source 'http://ruby.taobao.org'
 
 gem 'rails', '3.2.13'
+gem "bootstrap-sass", '2.0.4'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -8,10 +9,17 @@ gem 'rails', '3.2.13'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'guard-rspec'
 end
 
 group :test do
   gem 'capybara','1.1.2'
+  gem 'rb-fsevent'
+  #gem 'rb-fsevent','0.9.1', :require => false
+  #gem 'guard-spork', '1.2.0'
+  #gem 'spork', '0.9.2'
+  gem 'guard-spork'
+  gem 'spork'
 end
 
 group :production do
