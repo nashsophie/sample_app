@@ -21,6 +21,7 @@ group :test do
   #gem 'spork', '0.9.2'
   gem 'guard-spork'
   gem 'spork'
+  gem 'factory_girl_rails'
 end
 
 group :production do
