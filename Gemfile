@@ -22,6 +22,10 @@ group :test do
   gem 'guard-spork'
   gem 'spork'
   gem 'factory_girl_rails'
+  
+  #http://about.ac/rails-tutorial-2nd-cn/chapter8.html#sec-8-3
+  gem 'cucumber-rails', '1.2.1', require: false
+  gem 'database_cleaner', '0.7.0'
 end
 
 group :production do
